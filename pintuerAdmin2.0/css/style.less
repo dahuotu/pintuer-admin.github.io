@@ -1,0 +1,342 @@
+/*全局变量*/
+
+@body-bgColor: #f6f6f6;
+@body-pgColor: #ffffff;
+//边线颜色
+@border-Color: #e2e2e2;
+@border-chColor: #00b4a1;
+//默认字体颜色
+@font-Color: #919191;
+@font-Menu: 18px;
+@font-Main: 16px;
+//高亮字体颜色
+@font-lhColor: #474747;
+//选中字体颜色
+@font-chColor: #00b4a1;
+
+/*模块变量*/
+
+.font-Default {
+    font-size: 14px;
+    color: @font-Color;
+}
+
+
+/*左侧导航变量*/
+
+@nav-bgColor: #00b4a1;
+@nav-color: #fff;
+@nav-width: 300px;
+@nav-height: 235px;
+@nav-menu-color: #fff;
+@nav-menu-chColor: #00a290;
+@nav-menu-chBorder: 6px solid #fff;
+
+/*顶部导航变量*/
+
+@menu-height: 80px;
+
+/*内容区域变量*/
+
+@main-padding: 45px 100px;
+
+/*右侧展开页变量*/
+
+@head-bgColor: #00b4a1;
+
+/*布局*/
+
+.layout {
+    width: 100%;
+    .nav {
+        width: @nav-width;
+        background: @nav-bgColor;
+        color: @nav-color;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        .nav-top {
+            position: absolute;
+            top: 0;
+            height: @nav-height;
+            left: 0;
+            right: 0;
+            .logo {
+                height: 48px;
+                margin-top: 40px;
+                justify-content: center;
+                align-items: center;
+                display: -webkit-flex;
+            }
+            .title {
+                height: 58px;
+                margin-top: 15px;
+                font-size: 24px;
+                padding: 0 50px;
+                text-align: center;
+            }
+        }
+        .nav-menu {
+            position: absolute;
+            top: @nav-height;
+            left: 0;
+            right: 0;
+            bottom: @nav-height;
+            overflow: auto;
+        }
+        .nav-menu::-webkit-scrollbar-track {
+            background-color: @nav-bgColor;
+        }
+        .nav-menu::-webkit-scrollbar {
+            width: 10px;
+            background-color: @nav-bgColor;
+        }
+        .nav-menu::-webkit-scrollbar-thumb {
+            background-color: @nav-menu-chColor;
+        }
+        .nav-bottom {
+            position: absolute;
+            height: @nav-height;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                height: @menu-height;
+                line-height: @menu-height;
+                border-left: 6px solid @nav-bgColor;
+                font-size: @font-Menu;
+                padding-left: 50px;
+                i {
+                    margin-right: 24px;
+                    font-size: 24px;
+                }
+            }
+            .active {
+                background: @nav-menu-chColor;
+                border-left: @nav-menu-chBorder;
+            }
+            .bottom {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+    .container {
+        background: @body-bgColor;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        left: @nav-width;
+        .menu {
+            height: @menu-height;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background: #fff;
+            padding: 0 100px;
+            display: flex;
+            border-bottom: 1px solid @border-Color;
+            font-size: @font-Menu;
+            .menu-nav {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                width: 65%;
+                li {
+                    height: 80px;
+                    line-height: 80px;
+                    color: @font-Color;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 0 24px;
+                    .arrow {}
+                }
+                li:first-child {
+                    padding-left: 0;
+                }
+                .active {
+                    color: @font-chColor;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 0 24px;
+                    .arrow {
+                        position: absolute;
+                        top: 75px;
+                        width: 10px;
+                        height: 10px;
+                        border-top: 1px solid @border-Color;
+                        border-left: 1px solid @border-Color;
+                        transform: rotate(45deg);
+                        background: #f6f6f6;
+                        margin: 0 auto;
+                        margin-left: 24px;
+                    }
+                }
+            }
+            .info {
+                color: @font-Color;
+                font-size: @font-Main;
+                display: flex;
+                width: auto;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                justify-content: right;
+                align-items: center;
+                .face {
+                    color: 30px;
+                    img {}
+                }
+                li {
+                    line-height: 30px;
+                    height: 30px;
+                }
+                .name {
+                    padding: 0 15px 0 10px;
+                }
+                .exit {
+                    padding: 0 0 0 15px;
+                }
+            }
+        }
+        .main {
+            height: 100%;
+            margin-top: @menu-height;
+            padding: @main-padding;
+            overflow: auto;
+        }
+        .main ::-webkit-scrollbar-track {
+            background-color: @nav-bgColor;
+        }
+        .main ::-webkit-scrollbar {
+            width: 10px;
+            background-color: @nav-bgColor;
+        }
+        .main ::-webkit-scrollbar-thumb {
+            background-color: @nav-menu-chColor;
+        }
+    }
+    .page {
+        display: block;
+        .page-desk {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: #000;
+            opacity: 0.6;
+        }
+        .page-container {
+            position: fixed;
+            left: 40%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background: @body-pgColor;
+            z-index: 1;
+            .page-head {
+                height: 100px;
+                background: @head-bgColor;
+                width: 100%;
+                line-height: 100px;
+            }
+            .page-body {
+                padding: 50px;
+                background: @body-pgColor;
+            }
+        }
+    }
+}
+
+
+/*表单*/
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid @border-chColor;
+}
+
+.form {
+    width: 100%;
+    .form-group {
+        width: 100%;
+    }
+    .form-title {
+        .font-Default;
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        .title {
+            width: 50%;
+        }
+        .tips {
+            width: 50%;
+            color: @font-chColor;
+            text-align: right;
+        }
+    }
+    .form-value {
+        margin-bottom: 25px;
+    }
+}
+
+.text {
+    border: 1px solid @border-Color;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+
+.input {
+    .text;
+    width: 97%;
+    height: 48px;
+    line-height: 48px;
+}
+
+.textarea {
+    .text;
+    width: 97%;
+    height: 98px;
+    line-height: 98px;
+}
+
+.search {
+    .text;
+    width: 97%;
+    height: 48px;
+    line-height: 48px;
+}
+
+.select {
+    .text;
+    width: 47%;
+    height: 48px;
+    line-height: 48px;
+}
+
+.button {
+    color: #fff;
+    background: linear-gradient(90deg, #00bb8b 0%, #00a598 100%);
+    border-radius: 4px;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+}
+
+
+/*动画*/
