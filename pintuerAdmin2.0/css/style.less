@@ -1,5 +1,10 @@
 /*全局变量*/
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 @body-bgColor: #f6f6f6;
 @body-pgColor: #ffffff;
 //边线颜色
@@ -263,14 +268,13 @@
 
 /*表单*/
 
-input:focus,
-textarea:focus,
-select:focus {
-    border: 1px solid @border-chColor;
-}
-
 .form {
     width: 100%;
+    input:focus,
+    textarea:focus,
+    select:focus {
+        border: 1px solid @border-chColor;
+    }
     .form-group {
         width: 100%;
     }
@@ -340,3 +344,125 @@ select:focus {
 
 
 /*动画*/
+
+
+/*模块*/
+
+.layout-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    background: url('https://up.enterdesk.com/edpic_source/2e/4c/a7/2e4ca75f1792bc8d4312173436037116.jpg') no-repeat;
+    .login {
+        width: 900px;
+        height: 420px;
+        margin: 0 auto;
+        display: flex;
+        box-shadow: 0px 5px 10px #eaeaea;
+        .logo {
+            width: 450px;
+            background: #05aa95;
+            .system {
+                height: 200px;
+                border-left: 4px solid #fff;
+                padding: 0 40px;
+                margin: 85px;
+                .welcome {
+                    color: #ffff98;
+                    font-size: 26px;
+                    margin-bottom: 30px;
+                }
+                .name {
+                    color: #fff;
+                    font-size: 22px;
+                }
+                .other {}
+            }
+        }
+        .form {
+            width: 450px;
+            height: 420px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+/*组件*/
+
+@login-InputWidth: 100%;
+@login-InputHeight: 50px;
+@login-InputLine-Height: 50px;
+.components {
+    .login-panel {
+        width: auto;
+        height: 100%;
+        background: #fff;
+        padding: 0px 75px;
+        justify-content: center;
+        align-items: center;
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border: 1px solid @border-chColor;
+        }
+        .login-logo {
+            height: 60px;
+            width: 100%;
+            padding-top: 50px;
+            img {}
+        }
+        .login-message {
+            font-size: 14px;
+            color: #fe0100;
+            margin: 10px 0;
+        }
+        .login-username {
+            margin-bottom: 10px;
+            .input-username {
+                width: @login-InputWidth;
+                height: @login-InputHeight;
+                line-height: @login-InputLine-Height;
+                border: 1px solid #e2e2e2e;
+            }
+        }
+        .login-password {
+            .input-password {
+                width: @login-InputWidth;
+                height: @login-InputHeight;
+                line-height: @login-InputLine-Height;
+                border: 1px solid #e2e2e2e;
+                 :disabled {
+                    background: #eee;
+                    pointer-events: none;
+                }
+            }
+        }
+        .login-remember {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #919191;
+            height: 18px;
+            line-height: 18px;
+            .input-remember {}
+        }
+        .login-button {
+            .input-button {
+                width: @login-InputWidth;
+                height: @login-InputHeight;
+                line-height: @login-InputLine-Height;
+                color: #fff;
+                background: linear-gradient(90deg, #00bb8b 0%, #00a598 100%);
+                border-radius: 4px;
+                text-align: center;
+                border: none;
+            }
+        }
+    }
+}
