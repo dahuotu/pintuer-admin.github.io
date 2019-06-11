@@ -1,0 +1,336 @@
+﻿<!--
+	作者：大火兔 1979788761@qq.com
+	时间：2015-11-24
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="renderer" content="webkit">
+		<title>拼图响应式后台管理-后台管理</title>
+		<!--
+        	作者：大火兔 1979788761@qq.com
+        	时间：2015-11-17
+        	描述：使用官网CSS/JS同步最新版
+        -->
+		<link rel="stylesheet" href="http://www.pintuer.com/css/pintuer.css">
+		<link rel="stylesheet" href="css/admin.css">
+		<link type="image/x-icon" href="http://www.pintuer.com/favicon.ico" rel="shortcut icon" />
+		<link href="http://www.pintuer.com/favicon.ico" rel="bookmark icon" />
+	</head>
+
+	<body style="background-image: url(http://img5q.duitang.com/uploads/item/201312/14/20131214173112_MZPAa.jpeg);">
+		<!--顶部-->
+		<div class="layout bg-main bg-inverse fixed" style="z-index: 9;">
+			<div class="container-layout">
+				<div class="navbar">
+					<!--
+                    	作者：1979788761@qq.com
+                    	时间：2015-11-18
+                    	描述：LOGO及系统名称
+                    -->
+					<div class="navbar-head">
+						<button class="button icon-navicon" data-target="#navbar1">
+						</button>
+						<a href="/">
+							<img src="http://www.pintuer.com/images/30-white.png" />
+							<strong class="text-big hidden-l hidden-s">拼图管理系统</strong></a>
+					</div>
+					<!--
+                    	作者：1979788761@qq.com
+                    	时间：2015-11-18
+                    	描述：导航
+                    -->
+					<div class="navbar-body nav-navicon" id="navbar1">
+						<ul class="nav nav-inline nav-menu">
+							<li><a class="icon-cog" href="system.html">设置<span class="arrow"></span></a>
+								<ul class="drop-menu">
+									<li><a href="system.html">全局设置</a></li>
+									<li><a href="system.html">系统设置</a></li>
+									<li><a href="system.html">会员设置</a></li>
+									<li><a href="system.html">积分设置</a></li>
+									<li><a href="system.html">权限设置</a></li>
+									<li><a href="system.html">插件设置</a></li>
+									<li><a href="javascript:;">皮肤设置<span class="arrow"></span></a>
+										<ul>
+											<li><a href="#">墨绿</a></li>
+											<li><a href="#">天蓝</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a class="icon-home" href="index.html">导航<span class="arrow"></span></a>
+								<ul class="drop-menu">
+									<li><a class="icon-th-list" href="#">栏目</a></li>
+									<li><a class="icon-file-text" href="content.html">内容<span class="arrow"></span></a>
+										<ul>
+											<li><a href="content.html">新闻</a></li>
+											<li><a href="#">留言</a></li>
+											<li><a href="#">反馈</a></li>
+										</ul>
+									</li>
+									<li><a class="icon-user" href="#">会员</a></li>
+									<li><a class="icon-shopping-cart" href="#">订单</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!--
+                        	作者：1979788761@qq.com
+                        	时间：2015-11-18
+                        	描述：右侧用户资料
+                        -->
+						<ul class="nav nav-inline nav-menu navbar-right">
+							<li>
+								<a class="bg-main" href="javascript:;">
+									<spn><img src="http://www.pintuer.com/demo/pintuer2/images/face.jpg" width="28" class="radius-circle"></spn>
+									管理员
+									<span class="downward"></span>
+								</a>
+								<ul class="drop-menu">
+									<li><a class="icon-user" target="_blank" href="javascript:;">修改资料</a></li>
+									<li><a class="icon-key" target="_blank" href="javascript:;">修改密码</a></li>
+								</ul>
+							</li>
+							<li><a class="bg-green" href="javascript:;"><span class="icon-envelope"></span>&nbsp;<span class="badge bg-blue">5+</span><span class="downward"></span></a>
+								<ul class="drop-menu">
+									<li><a class="text-yellow-light" target="_blank" href="javascript:;"><span class="icon-envelope"></span>您有16封邮件</a></li>
+									<li><a class="bg-gray" target="_blank" href="javascript:;"><span class="icon-envelope"></span>查阅更多...</a></li>
+								</ul>
+							</li>
+							<li><a class="bg-blue" href="javascript:;"><span class="icon-bell-o"></span>&nbsp;<span class="badge bg-green">99+</span><span class="downward"></span></a>
+								<ul class="drop-menu">
+									<li><a class="text-yellow-light active" target="_blank" href="javascript:;"><span class="icon-comment"></span>您有26条未读消息</a></li>
+									<li><a class="text-yellow-light active" target="_blank" href="javascript:;"><span class="icon-comments"></span>您有13条回复消息</a></li>
+									<li><a class="bg-gray" target="_blank" href="javascript:;"><span class="icon-envelope"></span>查看更多...</a></li>
+								</ul>
+							</li>
+							<li><a class="bg-yellow" target="_blank" href="login.html"><span class="icon-sign-out"></span>注销</a></li>
+						</ul>
+						<!--
+                        	作者：1979788761@qq.com
+                        	时间：2015-11-18
+                        	描述：左侧搜索
+                        -->
+						<div class="navbar-form navbar-left hidden-l hidden-s">
+							<form>
+								<input type="text" class="input input-auto" name="keywords" size="15" placeholder="功能名称">
+								<input type="submit" name="search" value="搜索" class="button bg">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="layout padding">
+			<ul class="bread bg">
+				<li><a href="#" class="icon-home">首页</a> </li>
+				<li><a href="#">设置</a></li>
+				<li><a href="#">系统设置</a></li>
+			</ul>
+			<div class="admin radius">
+				<div class="alert alert-yellow padding">
+					<span class="close rotate-hover"></span><strong>使用说明</strong>
+					<p class="text-small">在这里对系统进行常规设置，非管理人员请勿随意更改...</p>
+				</div>
+				<!--
+                	作者：1979788761@qq.com
+                	时间：2015-11-24
+                	描述：这里的选项卡建议最多使用2个，否则在响应式小屏幕下，会出现排版问题，请严格遵照此项。
+                -->
+				<div class="tab">
+					<div class="tab-head">
+						<strong>系统设置</strong>
+						<ul class="tab-nav">
+							<li class="active"><a href="#tab-set">系统设置</a></li>
+							<li class=""><a href="#tab-email">邮件设置</a></li>
+						</ul>
+					</div>
+					<div class="tab-body">
+						<br>
+						<div class="tab-panel active" id="tab-set">
+							<form method="post" class="form-x" action="system.html">
+								<div class="form-group">
+									<div class="label">
+										<label>网站维护状态</label>
+									</div>
+									<div class="field">
+										<div class="button-group button-group-small radio">
+											<label class="button active">
+												<input name="pintuer" value="yes" checked="checked" type="radio"><span class="icon icon-check"></span> 开启</label>
+											<label class="button">
+												<input name="pintuer" value="no" type="radio"><span class="icon icon-times"></span> 关闭</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="label">
+										<label for="readme">维护说明</label>
+									</div>
+									<div class="field">
+										<textarea class="input" rows="5" cols="50" placeholder="请填写维护说明" data-validate="required:请填写维护说明"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="label">
+										<label for="sitename">网站名称</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="sitename" name="sitename" size="50" placeholder="网站名称" data-validate="required:请填写你网站的名称">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="label">
+										<label for="siteurl">网址</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="siteurl" name="siteurl" size="50" placeholder="请填写网址" data-validate="required:请填写网址">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="label">
+										<label for="logo">标志</label>
+									</div>
+									<div class="field">
+										<a class="button input-file" href="javascript:void(0);">+ 浏览文件<input size="100" type="file" name="logo" data-validate="required:请选择上传文件,regexp#.+.(jpg|jpeg|png|gif)$:只能上传jpg|gif|png格式文件"></a>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="label">
+										<label for="title">优化标题</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="title" name="title" size="50" placeholder="title标题内容，用于搜索引擎优化" data-validate="required:请填写优化标题，建议在80字以内。">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="label">
+										<label for="keywords">关键词</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="keywords" name="keywords" size="50" placeholder="站点关键词，用于搜索引擎优化" data-validate="required:请填写站点关键词，建议在100字以内。">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="label">
+										<label for="desc">描述</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="desc" name="desc" size="50" placeholder="网站的描述，用于搜索引擎优化" data-validate="required:请填写网站的描述，建议在200字以内。">
+									</div>
+								</div>
+								<div class="form-button">
+									<button class="button bg-main button-block" type="submit">提交</button>
+								</div>
+							</form>
+						</div>
+						<div class="tab-panel" id="tab-email">
+							<!--
+                            	作者：1979788761@qq.com
+                            	时间：2015-11-24
+                            	描述：这里自己增加设置的表单元素，我在这里就不增加了。
+                            -->
+							<form method="post" class="form-x" action="system.html">
+								<div class="form-group" id="f_1448349152667">
+									<div class="label">
+										<label for="f_required_txt">
+											SMTP服务器
+										</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="f_required_txt" name="f_required_txt" maxlength="50" value="" data-validate="required:请填写SMTP服务器" placeholder="输入SMTP服务器">
+									</div>
+								</div>
+								<div class="form-group" id="f_1448349172539">
+									<div class="label">
+										<label for="f_number_txt">
+											SMTP服务器端口
+										</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="f_number_txt" name="f_number_txt" maxlength="5" value="" data-validate="required:请填写数字,number:请输入数字,length#<5:字数在0-5个" placeholder="输入SMTP服务器端口号">
+									</div>
+								</div>
+								<div class="form-group" id="f_1448349215650">
+									<div class="label">
+										<label for="f_username_txt">
+											发件人/账号
+										</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="f_username_txt" name="f_username_txt" maxlength="50" value="" data-validate="required:请填写发件账号,email:请输入Email,如：1979788761@qq.com,length#<50:字数在0-50个" placeholder="英文字母开头的字母、下划线、数字">
+									</div>
+								</div>
+								<div class="form-group" id="f_1448349216859">
+									<div class="label">
+										<label for="f_password_txt">
+											发件人/密码
+										</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="f_password_txt" name="f_password_txt" maxlength="50" value="" data-validate="required:请填写密码,username:请输入英文字母开头的字母、下划线、数字,length#<50:字数在0-50个" placeholder="英文字母开头的字母、下划线、数字">
+									</div>
+								</div>
+								<div class="form-group" id="f_1448349246782">
+									<div class="label">
+										<label for="f_test_email_txt">
+											测试电子邮箱
+										</label>
+									</div>
+									<div class="field">
+										<input type="text" class="input" id="f_test_email_txt" name="f_test_email_txt" maxlength="50" value="" data-validate="required:请填写密码,email:请输入Email,如：1979788761@qq.com,length#<50:字数在0-50个" placeholder="请输入电子邮箱">
+									</div>
+								</div>
+								<div class="form-button">
+									<button class="button bg-main button-block" type="submit">提交</button>
+								</div>
+							</form>
+						</div>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+		<!--底部-->
+		<div class="layout fixed-bottom bg-white hidden-l">
+			<div class="border-bottom padding-bottom">
+				<div class="text-center height-big text-small">
+					<strong>版权所有 © <a href="http://www.pintuer.com">Pintuer.com</a> All Rights Reserved，图ICP备：<a href="http://www.pintuer.com">380959609</a></strong>
+				</div>
+			</div>
+		</div>
+		<div class="hidden">
+			<script>
+				var _hmt = _hmt || [];
+				(function() {
+					var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+					document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F637f0fe043ea4b7f59c05d4491e27667' type='text/javascript'%3E%3C/script%3E"));
+				})();
+			</script>
+		</div>
+		<script src="http://www.pintuer.com/js/jquery.js"></script>
+		<script src="http://www.pintuer.com/js/pintuer.js"></script>
+		<script src="http://www.pintuer.com/plugins/respond.js"></script>
+		<script src="http://www.pintuer.com/plugins/layer/layer.js"></script>
+		<script src="js/jquery.tablesorter.js"></script>
+		<script src="js/admin.js"></script>
+		<script>
+			$(function() {
+				//设置第一列不排序
+				$.tablesorter.defaults.headers = {
+					0: {
+						sorter: false
+					}
+				};
+				$('#data-table').tablesorter();
+			});
+		</script>
+	</body>
+
+</html>

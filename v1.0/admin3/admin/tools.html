@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="keywords" content="CSS重定义" />
+		<meta name="description" content="重新定义常用的CSS，对文本、图像、按钮、背景、表格等样式重新设置。" />
+		<title>旅行小工具</title>
+		<link href="../css/pintuer.css" rel="stylesheet">
+		<link href="../css/admin.css" rel="stylesheet">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/pintuer.js"></script>
+		<script src="../js/respond.js"></script>
+		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+		<link href="../favicon.ico" rel="bookmark icon" />
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<a href="index.html"><img alt="" src="../img/index_logo.png"></a>
+			</div>
+			<div class="by"><img alt="" src="../img/by.png"></div>
+			<div class="application">
+				<div class="imgs" style='background: url("../img/logout.png") no-repeat left / 100% 100%;'>
+				</div>
+			</div>
+			<ul class="mainMenu">
+				<li>
+					<a href="index.html">
+						<div class="menu ">首页</div>
+					</a>
+				</li>
+				<li>
+					<a href="fun.html">
+						<div class="menu toDown">功能</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="navLwapper">
+			<div id="navL">
+				<div class="navTop clearfix">
+					<div class="perImg"><img alt="" src="../img/icon36.png"></div>
+					<div class="perMesg">
+						<p class="p1">用户名：</p>
+						<div class="perName"><span title="dahuotu">dahuotu</span><i>管理员</i></div>
+						<p class="safety">帐号安全度：<span>低</span></p>
+						<div class="safetyName">
+							<span class="apcol1"></span>
+						</div>
+					</div>
+				</div>
+				<ul class="msgLink clearfix">
+					<li>
+						<a href="#">帐号信息<span class="mesNum"></span></a>
+					</li>
+					<li>
+						<a href="articleList.html">我的文章</a>
+					</li>
+					<li>
+						<a href="#">消息中心</a>
+					</li>
+				</ul>
+				<ul class="navMain">
+					<li class="sp">
+						<a href="fun.html">功能清单</a><span class="sp1"></span></li>
+					<li>
+						<a href="nav.html">菜单设置</a><span class="sp2"></span></li>
+					<li class="active">
+						<a href="tools.html">旅行小工具</a><span class="sp3"></span></li>
+					<li>
+						<a href="mobile.html">通讯录生成</a><span class="sp4"></span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="cenMain">
+			<div class="askans subMright subBs">
+				<p>旅行小工具维护</p>
+				<!--内容-->
+				<div class="doc-input">
+					<ul class="doc-icons">
+						<li id="l_1" data-id="1" data-name="出行小工具" data-note="出行必备小工具" data-url="http://www.dahuotu.com" onclick="editTools('l_1')">
+							<span class="">
+								<img src="../img/icon40.png" class="img-responsive" width="60" />
+							</span>
+							<span>出行小工具</span>
+						</li>
+						<li style="" onclick="editTools('l_0')"><span class="icon-plus"></span><span>添加</span> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="addedit" style="display: none;">
+			<form onsubmit="return false;" class="form-x">
+				<div class="form-group" id="f_1492400447898">
+					<div class="label">
+						<label for="f_required_txt">
+               				名称
+                        </label>
+					</div>
+					<div class="field">
+						<input class="input" id="f_required_txt" name="f_required_txt" maxlength="50" value="" data-validate="required:请填写小工具名称" placeholder="输入小工具名称" type="text">
+					</div>
+				</div>
+				<div class="form-group" id="f_1492401237569">
+					<div class="label">
+						<label for="upfile">
+                                                    图标
+                                                </label>
+					</div>
+					<div class="field">
+						<a class="button input-file" href="javascript:void(0);">
+							+ 请选择上传文件
+							<input size="100" data-validate="required:请选择文件,img:只能上传jpg|gif|png|ico格式文件" type="file">
+						</a>
+					</div>
+				</div>
+				<div class="form-group" id="f_1492400454075">
+					<div class="label">
+						<label for="f_address_txt">
+               				简介
+                        </label>
+					</div>
+					<div class="field">
+						<textarea type="text" class="input" id="f_address_txt" name="f_address_txt" maxlength="500" value="" placeholder="请输入小工具简介"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group" id="f_1492401228883">
+					<div class="label">
+						<label for="f_url_txt">
+                                                    网址
+                                                </label>
+					</div>
+					<div class="field">
+						<input class="input" id="f_url_txt" name="f_url_txt" maxlength="50" value="" placeholder="请输入网址" type="text">
+					</div>
+				</div>
+				<div class="form-group" id="f_1492064295267">
+					<div class="label">
+						<label for="f_required_txt"></label>
+					</div>
+					<div class="field">
+						<button type="submit" class="button bg-green" style="width: 200px;">
+                                    提交
+                            </button>
+						<button type="button" class="button bg-main" style="width: 200px;" onclick="layer.closeAll()">
+                                    取消
+                            	</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</body>
+	<script src="../js/layer/layer.js"></script>
+	<script>
+		$(function() {
+
+		});
+
+		function editTools(id) {
+			//页面层
+			layer.open({
+				type: 1,
+				skin: 'layui-layer-rim', //加上边框
+				area: ['560px', '440px'], //宽高
+				content: $(".addedit").html()
+			});
+		}
+	</script>
+
+</html>

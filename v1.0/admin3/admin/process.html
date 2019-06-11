@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="keywords" content="CSS重定义" />
+		<meta name="description" content="重新定义常用的CSS，对文本、图像、按钮、背景、表格等样式重新设置。" />
+		<title>进度中心</title>
+		<link href="../css/pintuer.css" rel="stylesheet">
+		<link href="../css/admin.css" rel="stylesheet">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/pintuer.js"></script>
+		<script src="../js/respond.js"></script>
+		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+		<link href="../favicon.ico" rel="bookmark icon" />
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<a href="/"><img alt="" src="../img/index_logo.png"></a>
+			</div>
+			<div class="by"><img alt="" src="../img/by.png"></div>
+			<div class="application">
+				<div class="imgs" style='background: url("../img/logout.png") no-repeat left / 100% 100%;'>
+				</div>
+			</div>
+			<ul class="mainMenu">
+				<li>
+					<a href="index.html">
+						<div class="menu toDown">首页</div>
+					</a>
+				</li>
+				<li>
+					<a href="fun.html">
+						<div class="menu">功能</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="navLwapper">
+			<div id="navL">
+				<div class="navTop clearfix">
+					<div class="perImg"><img alt="" src="../img/icon36.png"></div>
+					<div class="perMesg">
+						<p class="p1">用户名：</p>
+						<div class="perName"><span title="dahuotu">dahuotu</span><i>管理员</i></div>
+						<p class="safety">帐号安全度：<span>低</span></p>
+						<div class="safetyName">
+							<span class="apcol1"></span>
+						</div>
+					</div>
+				</div>
+				<ul class="msgLink clearfix">
+					<li>
+						<a href="#">帐号信息<span class="mesNum"></span></a>
+					</li>
+					<li>
+						<a href="articleList.html">我的文章</a>
+					</li>
+					<li>
+						<a href="#">消息中心</a>
+					</li>
+				</ul>
+				<ul class="navMain">
+					<li class="sp">
+						<a href="index.html">首页</a><span class="sp1"></span></li>
+					<li>
+						<a href="weixinList.html">微信公众号</a><span class="sp2"></span></li>
+					<li class="active">
+						<a href="process.html">进度中心</a><span class="sp3"></span></li>
+					<li>
+						<a href="plan.html">客户订单</a><span class="sp4"></span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="cenMain">
+			<div class="askans subMright subBs">
+				<p>粉丝目标进度记录</p>
+				<div style="width: 100%;display: inline-block;">
+					<div style="width: 60%;float: left;">
+						<form class="form-x" onsubmit="return false;">
+							<div class="form-group" id="f_1492155191157">
+								<div class="label">
+									<label for="f_number_txt">
+              					微博粉丝数
+                            </label>
+								</div>
+								<div class="field">
+									<input type="text" class="input" id="f_number_txt" name="f_number_txt" maxlength="5" value="" data-validate="required:请填写数字,number:请输入数字,length#<5:字数在0-5个" placeholder="输入数字" style="width: 400px;">
+								</div>
+							</div>
+							<div class="form-group" id="f_1492155199745">
+								<div class="label">
+									<label for="f_number_txt">
+                      			公众平台粉丝数
+                            </label>
+								</div>
+								<div class="field">
+									<input type="text" class="input" id="f_number_txt" name="f_number_txt" maxlength="5" value="" data-validate="required:请填写数字,number:请输入数字,length#<5:字数在0-5个" placeholder="输入数字" style="width: 400px;">
+								</div>
+							</div>
+							<div class="form-group" id="f_1492155200350">
+								<div class="label">
+									<label for="f_number_txt">
+                             	今日头条粉丝数
+                            </label>
+								</div>
+								<div class="field">
+									<input type="text" class="input" id="f_number_txt" name="f_number_txt" maxlength="5" value="" data-validate="required:请填写数字,number:请输入数字,length#<5:字数在0-5个" placeholder="输入数字" style="width: 400px;">
+								</div>
+							</div>
+							<div class="form-group" id="f_1492155200966">
+								<div class="label">
+									<label for="f_number_txt">
+                                UC粉丝数
+                            </label>
+								</div>
+								<div class="field">
+									<input type="text" class="input" id="f_number_txt" name="f_number_txt" maxlength="5" value="" data-validate="required:请填写数字,number:请输入数字,length#<5:字数在0-5个" placeholder="输入数字" style="width: 400px;">
+								</div>
+							</div>
+							<div class="form-group" id="f_1492155202401">
+								<div class="label">
+									<label for="f_number_txt">
+                                腾讯新闻粉丝数
+                            </label>
+								</div>
+								<div class="field">
+									<input type="text" class="input" id="f_number_txt" name="f_number_txt" maxlength="5" value="" data-validate="required:请填写数字,number:请输入数字,length#<5:字数在0-5个" placeholder="输入数字" style="width: 400px;">
+								</div>
+							</div>
+							<div class="form-group" id="f_1492155208219">
+								<div class="label">
+									<label for="f_plusinteger_txt">
+                      					百度新闻粉丝数
+                            		</label>
+								</div>
+								<div class="field">
+									<input type="text" class="input" id="f_plusinteger_txt" name="f_plusinteger_txt" maxlength="5" value="" data-validate="required:请填写数字,plusinteger:请输入不含0和负数的数字,length#<5:字数在5个" placeholder="输入数字" style="width: 400px;">
+								</div>
+							</div>
+							<div class="form-group" id="f_1492155208219">
+								<div class="label">
+									<label for="f_plusinteger_txt">
+                      					大记事
+                            		</label>
+								</div>
+								<div class="field">
+									<textarea type="text" class="input" id="f_plusinteger_txt" name="f_plusinteger_txt" maxlength="5" value="" data-validate="required:请填写大记事" placeholder="输入大记事内容" style="width: 400px;">
+									</textarea>
+								</div>
+							</div>
+
+							<div class="form-group" id="f_1492064295267">
+								<div class="label">
+									<label for="f_required_txt"></label>
+								</div>
+								<div class="field">
+									<button type="submit" class="button bg-green" style="width: 200px;">
+                                    提交
+                            		</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div style="float: left;width: 40%;">
+						<iframe src="http://www.lanxietrip.com/weixin/user/purpose.html" style="width: 360px;height: 640px;border: 5px solid #f5f5f5;border-radius: 10px;"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

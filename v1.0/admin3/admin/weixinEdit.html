@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="keywords" content="CSS重定义" />
+		<meta name="description" content="重新定义常用的CSS，对文本、图像、按钮、背景、表格等样式重新设置。" />
+		<title>微信公众号</title>
+		<link href="../css/pintuer.css" rel="stylesheet">
+		<link href="../css/admin.css" rel="stylesheet">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/pintuer.js"></script>
+		<script src="../js/respond.js"></script>
+		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+		<link href="../favicon.ico" rel="bookmark icon" />
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<a href="/"><img alt="" src="../img/index_logo.png"></a>
+			</div>
+			<div class="by"><img alt="" src="../img/by.png"></div>
+			<div class="application">
+				<div class="imgs" style='background: url("../img/logout.png") no-repeat left / 100% 100%;'>
+				</div>
+			</div>
+			<ul class="mainMenu">
+				<li>
+					<a href="index.html">
+						<div class="menu toDown">首页</div>
+					</a>
+				</li>
+				<li>
+					<a href="fun.html">
+						<div class="menu">功能</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="navLwapper">
+			<div id="navL">
+				<div class="navTop clearfix">
+					<div class="perImg"><img alt="" src="../img/icon36.png"></div>
+					<div class="perMesg">
+						<p class="p1">用户名：</p>
+						<div class="perName"><span title="dahuotu">dahuotu</span><i>管理员</i></div>
+						<p class="safety">帐号安全度：<span>低</span></p>
+						<div class="safetyName">
+							<span class="apcol1"></span>
+						</div>
+					</div>
+				</div>
+				<ul class="msgLink clearfix">
+					<li>
+						<a href="#">帐号信息<span class="mesNum"></span></a>
+					</li>
+					<li>
+						<a href="articleList.html">我的文章</a>
+					</li>
+					<li>
+						<a href="#">消息中心</a>
+					</li>
+				</ul>
+				<ul class="navMain">
+					<li class="sp">
+						<a href="index.html">首页</a><span class="sp1"></span></li>
+					<li class="active">
+						<a href="weixinList.html">微信公众号</a><span class="sp2"></span></li>
+					<li>
+						<a href="process.html">进度中心</a><span class="sp3"></span></li>
+					<li>
+						<a href="plan.html">客户订单</a><span class="sp4"></span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="cenMain">
+			<div class="askans subMright subBs">
+				<p>微信公众号设置</p>
+				<!--内容-->
+				<div class="admin radius">
+					<div class="alert alert-yellow padding">
+						<span class="close rotate-hover"></span><strong>使用说明</strong>
+						<p class="text-small">填写微信公众号名称，选择公众号类型，方便区分对待！</p>
+					</div>
+					<form onsubmit="return false;" class="form-x">
+						<div class="form-group" id="f_1492064191804">
+							<div class="label">
+								<label for="f_required_txt">
+                                                    公众号名称
+                                </label>
+							</div>
+							<div class="field">
+								<input type="text" class="input" id="f_name_txt" name="f_name_txt" maxlength="50" value="" data-validate="required:请填写微信公众号名称" placeholder="输入微信公众号名称">
+							</div>
+						</div>
+						<div class="form-group" id="f_1492064223658">
+							<div class="label">
+								<label for="f_work">
+                                                    公众号类型
+                                </label>
+							</div>
+							<div class="field">
+								<div class="button-group radio">
+									<label class="button active">
+                                        <input id="f_work1" name="f_work" value="yes" checked="checked" type="radio" data-validate="required:请选择,length#>=1:至少选择1项"><span class="icon icon-check"></span> 服务号
+                                    </label>
+									<label class="button">
+                                        <input id="f_work0" name="f_work" value="no" type="radio" data-validate="required:请选择,length#>=1:至少选择1项"><span class="icon icon-times"></span> 订阅号
+                                    </label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group" id="f_1492064295267">
+							<div class="label">
+								<label for="f_required_txt"></label>
+							</div>
+							<div class="field">
+								<button type="submit" class="button bg-green" style="width: 200px;">
+                                    提交
+                            	</button>
+								<button type="button" class="button bg-main  win-back" style="width: 200px;">
+                                    返回
+                            	</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/admin.js "></script>
+
+</html>

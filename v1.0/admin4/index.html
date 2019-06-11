@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title>后台管理中心</title>
+<link rel="stylesheet" href="css/pintuer.css">
+<link rel="stylesheet" href="css/admin.css">
+<script src="js/jquery.js"></script>
+</head>
+<body>
+<div class="header bg-main">
+  <div class="h-logo"> <img src="images/y.jpg" class="radius-circle rotate-hover" height="50" alt=""><span>后台管理</span> </div>
+  <div class="head-l"><a href="##" target="_blank"><span class="icon-home"></span> 前台首页</a><a href=""><span class="icon-wrench"></span> 清除缓存</a></div>
+   <div class="head-r"><a href="##" target="_blank"><span class="icon-home"></span> 退出登录</a><span class="smenu icon-bars"></span></div>
+</div>
+<div class="leftnav">
+  <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
+  <h2 class=""><span class="icon-cog"></span>基本设置<i class="icon-angle-right"></i></h2>
+  <ul style="display: none;">
+    <li><a href="info.html" target="right"><span class="icon-caret-right"></span>网站设置</a></li>
+    <li><a href="pass.html" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
+    <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
+    <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>合作伙伴</a></li>
+    <li><a href="book.html" target="right"><span class="icon-caret-right"></span>留言管理</a></li>
+    <li><a href="column.html" target="right"><span class="icon-caret-right"></span>栏目管理</a></li>
+  </ul>
+  <h2><span class="icon-child"></span>关于我们<i class="icon-angle-right"></i></h2>
+  <ul>
+    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
+    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
+  </ul>
+  <h2><span class="icon-leaf"></span>新闻资讯<i class="icon-angle-right"></i></h2>
+  <ul>
+    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
+    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
+    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
+  </ul>
+  <h2><span class="icon-comments-o"></span>新闻中心<i class="icon-angle-right"></i></h2>
+   <ul>
+    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
+    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
+    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
+  </ul>
+  <h2><span class="icon-image (alias)"></span>企业相册<i class="icon-angle-right"></i></h2>
+  <ul>
+    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
+    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
+    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
+  </ul>
+  <h2><span class="icon-group (alias)"></span>人才招聘<i class="icon-angle-right"></i></h2>
+  <ul>
+    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
+    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
+  </ul>
+</div>
+<script type="text/javascript">
+$(function(){
+  $(".leftnav h2").click(function(){
+	  $(this).next().slideToggle(200);	
+	  $(this).toggleClass("on"); 
+  })
+  $(".leftnav ul li a").click(function(){
+	  var text1 = $(this).parent().parent().prev().text();
+	  $("#a1_leader_txt").text(text1);
+	  $("#a2_leader_txt").text($(this).text());
+	  $(".leftnav ul li a").removeClass("on");
+	  $(this).addClass("on");
+	  if($(window).width()<1100){
+	  	$(".leftnav").removeClass("on"); 
+	  }
+  })
+  $(".smenu").click(function(){
+  	 $(".leftnav").toggleClass("on"); 
+	  	
+  })
+});
+</script>
+<ul class="bread">
+  <li><a href="##" target="_parent" class="icon-home"> 首页</a></li>
+  <li><a href="##" id="a1_leader_txt">基本设置</a></li>
+  <li><a href="##" id="a2_leader_txt">网站信息</a></li>
+</ul>
+<div class="admin">
+  <iframe scrolling="auto" rameborder="0" src="info.html" name="right" width="100%" height="100%"></iframe>
+</div>
+</body>
+</html>

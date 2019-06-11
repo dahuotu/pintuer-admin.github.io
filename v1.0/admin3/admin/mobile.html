@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="keywords" content="CSS重定义" />
+		<meta name="description" content="重新定义常用的CSS，对文本、图像、按钮、背景、表格等样式重新设置。" />
+		<title>通讯录生成</title>
+		<link href="../css/pintuer.css" rel="stylesheet">
+		<link href="../css/admin.css" rel="stylesheet">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/pintuer.js"></script>
+		<script src="../js/respond.js"></script>
+		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+		<link href="../favicon.ico" rel="bookmark icon" />
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<a href="/"><img alt="" src="../img/index_logo.png"></a>
+			</div>
+			<div class="by"><img alt="" src="../img/by.png"></div>
+			<div class="application">
+				<div class="imgs" style='background: url("../img/logout.png") no-repeat left / 100% 100%;'>
+				</div>
+			</div>
+			<ul class="mainMenu">
+				<li>
+					<a href="index.html">
+						<div class="menu">首页</div>
+					</a>
+				</li>
+				<li>
+					<a href="fun.html">
+						<div class="menu toDown">功能</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="navLwapper">
+			<div id="navL">
+				<div class="navTop clearfix">
+					<div class="perImg"><img alt="" src="../img/icon36.png"></div>
+					<div class="perMesg">
+						<p class="p1">用户名：</p>
+						<div class="perName"><span title="dahuotu">dahuotu</span><i>管理员</i></div>
+						<p class="safety">帐号安全度：<span>低</span></p>
+						<div class="safetyName">
+							<span class="apcol1"></span>
+						</div>
+					</div>
+				</div>
+				<ul class="msgLink clearfix">
+					<li>
+						<a href="#">帐号信息<span class="mesNum"></span></a>
+					</li>
+					<li>
+						<a href="articleList.html">我的文章</a>
+					</li>
+					<li>
+						<a href="#">消息中心</a>
+					</li>
+				</ul>
+				<ul class="navMain">
+					<li class="sp">
+						<a href="fun.html">功能清单</a><span class="sp1"></span></li>
+					<li>
+						<a href="nav.html">菜单设置</a><span class="sp2"></span></li>
+					<li>
+						<a href="tools.html">旅行小工具</a><span class="sp3"></span></li>
+					<li class="active">
+						<a href="mobile.html">通讯录生成</a><span class="sp4"></span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="cenMain">
+			<div class="askans subMright subBs">
+				<p>通讯录生成</p>
+				<!--内容-->
+				<div class="admin radius">
+					<div class="alert alert-yellow padding">
+						<span class="close rotate-hover"></span><strong>使用说明</strong>
+						<p class="text-small">一键生成5000个手机号码，然后导入手机通讯录，通过微信自带的通讯录联系人匹配加微信好友，大火兔已测，一天可以加500个左右。</p>
+					</div>
+					<form class="" method="post">
+						<div class="admin-panel">
+							<div class="padding border-bottom">
+								<div class="button-toolbar margin-bottom fixed text-center bg-white" data-style="fixed-bottom" data-offset-fixed="350">
+									<div class="button-group">
+										<a href="javascript:;" class="button bg-main checkall" name="checkall" checkfor="id">
+											<span class="icon-check-circle"></span>全选</a>
+										<a href="javascript:alert('直接生成5000个手机号填充到表格里');" class="button border-main">
+											<span class="icon-edit"></span>生成
+										</a>
+									</div>
+									<div class="button-group">
+										<a class="button">
+											<span class="icon-reorder (alias) text-yellow"></span>&nbsp;操作</a>
+										<a href="javascript:;" class="button dropdown-toggle">
+											<span class="downward"></span>
+										</a>
+										<ul class="drop-menu">
+											<li>
+												<a href="javascript:;"><span class="icon-trash-o text-red"></span>批量导出选中</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--
+                        	作者：1979788761@qq.com
+                        	时间：2015-11-19
+                        	描述：注意，后台程序人员一定要在td里绑定data-title="表头名"否则移动端无法响应式
+                        -->
+							<div class="table-responsive-y">
+								<table id="data-table" class="table tablesorter table-hover">
+									<thead>
+										<tr>
+											<th width="180">选择/操作</th>
+											<th width="120">序号</th>
+											<th width="*">手机号码</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td data-title="选择/操作">
+												<div class="button-toolbar">
+													<div class="button-group">
+														<a href="edit.html" class="button" title="编号：1">
+															<input type="checkbox" name="id" value="1">
+														</a>
+														<a href="edit.html" class="button bg-blue" title="生成">
+															<span class="icon-edit"></span>
+														</a>
+														<a href="edit.html" class="button bg-yellow" title="删除">
+															<span class="icon-trash-o"></span>
+														</a>
+													</div>
+												</div>
+											</td>
+											<td data-title="序号">1</td>
+											<td data-title="手机号码">18680324376</td>
+										</tr>
+										<tr>
+											<td data-title="选择/操作">
+												<div class="button-toolbar">
+													<div class="button-group">
+														<a href="edit.html" class="button" title="编号：1">
+															<input type="checkbox" name="id" value="1">
+														</a>
+														<a href="edit.html" class="button bg-blue" title="生成">
+															<span class="icon-edit"></span>
+														</a>
+														<a href="edit.html" class="button bg-yellow" title="删除">
+															<span class="icon-trash-o"></span>
+														</a>
+													</div>
+												</div>
+											</td>
+											<td data-title="序号">1</td>
+											<td data-title="手机号码">18680324376</td>
+										</tr>
+										<tr>
+											<td data-title="选择/操作">
+												<div class="button-toolbar">
+													<div class="button-group">
+														<a href="edit.html" class="button" title="编号：1">
+															<input type="checkbox" name="id" value="1">
+														</a>
+														<a href="edit.html" class="button bg-blue" title="生成">
+															<span class="icon-edit"></span>
+														</a>
+														<a href="edit.html" class="button bg-yellow" title="删除">
+															<span class="icon-trash-o"></span>
+														</a>
+													</div>
+												</div>
+											</td>
+											<td data-title="序号">1</td>
+											<td data-title="手机号码">18680324376</td>
+										</tr>
+										<tr>
+											<td data-title="选择/操作">
+												<div class="button-toolbar">
+													<div class="button-group">
+														<a href="edit.html" class="button" title="编号：1">
+															<input type="checkbox" name="id" value="1">
+														</a>
+														<a href="edit.html" class="button bg-blue" title="生成">
+															<span class="icon-edit"></span>
+														</a>
+														<a href="edit.html" class="button bg-yellow" title="删除">
+															<span class="icon-trash-o"></span>
+														</a>
+													</div>
+												</div>
+											</td>
+											<td data-title="序号">1</td>
+											<td data-title="手机号码">18680324376</td>
+										</tr>
+										<tr>
+											<td data-title="选择/操作">
+												<div class="button-toolbar">
+													<div class="button-group">
+														<a href="edit.html" class="button" title="编号：1">
+															<input type="checkbox" name="id" value="1">
+														</a>
+														<a href="edit.html" class="button bg-blue" title="生成">
+															<span class="icon-edit"></span>
+														</a>
+														<a href="edit.html" class="button bg-yellow" title="删除">
+															<span class="icon-trash-o"></span>
+														</a>
+													</div>
+												</div>
+											</td>
+											<td data-title="序号">1</td>
+											<td data-title="手机号码">18680324376</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script src="js/admin.js"></script>
+
+</html>

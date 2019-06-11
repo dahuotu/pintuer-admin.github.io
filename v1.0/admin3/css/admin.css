@@ -1,0 +1,980 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	font-family: 微软雅黑, "Microsoft YaHei";
+	overflow-x: hidden;
+	background: #f0f3f6;
+	position: relative;
+	min-width: 1200px;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+	height: 100%;
+}
+
+.header {
+	height: 60px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 2;
+	border-bottom: #e6e6e6 solid 1px;
+	min-width: 1010px;
+	z-index: 1000;
+}
+
+#navLwapper {
+	position: fixed;
+	left: 0px;
+	top: 64px;
+	bottom: 3px;
+	width: 260px;
+	overflow: hidden;
+}
+
+.cenMain {
+	position: fixed;
+	left: 310px;
+	right: 0px;
+	top: 64px;
+	bottom: 3px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	min-width: 790px;
+}
+
+.subMright {
+	margin-right: 50px;
+}
+
+.subBs {
+	background: #fff;
+	-ms-box-shadow: 2px 2px 6px 0 rgba(136, 156, 176, 0.1);
+	-moz-box-shadow: 2px 2px 6px 0 rgba(136, 156, 176, 0.1);
+	-webkit-box-shadow: 2px 2px 6px 0 rgba(136, 156, 176, 0.1);
+	-o-box-shadow: 2px 2px 6px 0 rgba(136, 156, 176, 0.1);
+	box-shadow: 2px 2px 6px 0px rgba(136, 156, 176, 0.1);
+}
+
+.askans {
+	padding: 20px 34px 20px 34px;
+	margin-top: 35px;
+	margin-bottom: 70px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+.askans p {
+	font-size: 18px;
+	color: #00a3f0;
+	padding: 20px 0 24px;
+}
+
+#navL {
+	background: #4c5e70;
+	overflow-y: scroll;
+	width: 280px;
+	height: 100%;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	visibility: hidden;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+#navL .navTop {
+	padding-top: 42px;
+}
+
+#navL .msgLink {
+	border-bottom: #6a7988 solid 1px;
+	padding-bottom: 34px;
+}
+
+#navL .navMain li {
+	margin-bottom: 36px;
+	margin-left: 20px;
+	background: #40505f;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	width: 220px;
+	position: relative;
+}
+
+#navL .navMain .sp {
+	margin-top: 48px;
+}
+
+#navL .navMain li.active {
+	background: #00a3f0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#navL .navMain li a {
+	display: block;
+	height: 54px;
+	line-height: 54px;
+	text-indent: 88px;
+	font-size: 14px;
+	color: #fff;
+}
+
+#navL .navMain li span {
+	position: absolute;
+	left: 37px;
+	top: 20px;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+}
+
+#navL .navMain li .sp4 {
+	background: url("../img/licon4.png") no-repeat;
+}
+
+#navL .navMain li .sp3 {
+	background: url("../img/licon3.png") no-repeat;
+}
+
+#navL .navMain li .sp2 {
+	background: url("../img/licon2.png") no-repeat;
+}
+
+#navL .navMain li .sp1 {
+	background: url("../img/licon1.png") no-repeat;
+}
+
+#navL .msgLink li {
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+
+#navL .msgLink li a {
+	display: block;
+	padding: 5px;
+	color: #fff;
+	background: #40505f;
+	font-size: 12px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#navL .msgLink li .mesNum {
+	width: 7px;
+	height: 7px;
+	border-radius: 7px;
+	background: #f60;
+	position: absolute;
+	right: -2px;
+	top: -2px;
+}
+
+#navL .perImg {
+	float: left;
+}
+
+#navL .perMesg {
+	float: left;
+	font-size: 12px;
+	color: #a7afb7;
+	margin-left: 14px;
+	margin-bottom: 36px;
+}
+
+#navL .perMesg .p1 {
+	padding-bottom: 12px;
+}
+
+#navL .perMesg .perName {
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	margin-bottom: 28px;
+}
+
+#navL .perMesg .safety {
+	margin-bottom: 16px;
+}
+
+#navL .perMesg .safetyName {
+	width: 137px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	background: #dae1e8;
+	overflow: hidden;
+}
+
+#navL .perMesg .safetyName span {
+	display: block;
+	height: 8px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#navL .perMesg .safetyName .apcol1 {
+	width: 25%;
+	background: #f60;
+}
+
+#navL .perMesg .safety span {
+	padding: 3px 2px;
+	background: #40505f;
+	display: inline-block;
+}
+
+#navL .perMesg .perName span {
+	padding: 3px 2px;
+	background: #40505f;
+	width: 56px;
+	float: left;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#navL .perMesg .perName i {
+	background: #f60;
+	padding: 0px 3px;
+	margin-left: 7px;
+	float: left;
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+#navL .perImg img {
+	display: block;
+	width: 80px;
+	height: 80px;
+	-ms-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-o-border-radius: 40px;
+	border-radius: 40px;
+	margin: 14px 0 0 16px;
+	cursor: pointer;
+}
+
+.header .logo {
+	float: left;
+	width: 97px;
+	height: 34px;
+	margin-left: 71px;
+	margin-top: 15px;
+}
+
+.header .by {
+	float: left;
+	width: 239px;
+	height: 29px;
+	margin-left: 14px;
+	margin-top: 20px;
+}
+
+.header .application {
+	float: right;
+	height: 44px;
+	margin-right: 75px;
+	padding-top: 16px;
+}
+
+.header .mainMenu {
+	width: 560px;
+	position: absolute;
+	right: 270px;
+	top: 0px;
+}
+
+.header .mainMenu li {
+	float: left;
+}
+
+.header .mainMenu .menu {
+	font-size: 14px;
+	padding: 23px 31px 18px;
+	border-top: 3px solid rgba(0, 0, 0, 0);
+	color: #333333;
+	line-height: 16px;
+}
+
+.header .mainMenu .toDown {
+	border-bottom: 3px solid #00a3f0;
+	color: #00a3f0;
+	margin-top: -3px;
+}
+
+.header .selectBox {
+	display: none;
+	width: 384px;
+	height: 120px;
+	position: absolute;
+	top: 57px;
+	background-color: #f6f6f6;
+	left: 0px;
+	border-top: none;
+	-moz-box-shadow: 0 2px 2px #d5d5d5;
+	-webkit-box-shadow: 0 2px 2px #d5d5d5;
+	box-shadow: 0px 2px 2px #d5d5d5;
+}
+
+.header .selectBox .l {
+	margin: 18px 0 0 26px;
+	width: 62px;
+	float: left;
+	padding-right: -26px;
+}
+
+.header .selectBox .r {
+	margin: 18px 0 0 46px;
+	width: 200px;
+	float: left;
+}
+
+.header .selectBox .tit {
+	height: 26px;
+	line-height: 26px;
+	border-bottom: #ebebeb solid 1px;
+	font-size: 12px;
+	color: #333;
+}
+
+.header .selectBox .con {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #666;
+	height: 14px;
+	display: block;
+	line-height: 14px;
+	cursor: pointer;
+	float: left;
+}
+
+.header .selectBox .r .con {
+	margin-right: 26px;
+}
+
+.header .selectBox .r .active.con {
+	margin-right: 0px;
+}
+
+.header .application .imgs {
+	width: 31px;
+	height: 31px;
+	background: url("../img/application.png") no-repeat;
+	position: relative;
+	-webkit-border-radius: 31px;
+	-moz-border-radius: 31px;
+	border-radius: 31px;
+	background-size: 100% 100%;
+}
+
+.header .application .imgs .sel {
+	width: 78px;
+	position: absolute;
+	left: -22px;
+	top: 44px;
+	border-top: none;
+	display: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.header .application .imgs .sel a {
+	display: block;
+	height: 34px;
+	line-height: 34px;
+	color: #333;
+	font-size: 12px;
+	text-align: center;
+	background: #00a3f0;
+	color: #fff;
+}
+
+.admin {
+	width: 100%;
+	padding: 10px;
+	background: #fff;
+	right: 0;
+	bottom: 0;
+	top: 87px;
+	overflow: auto;
+}
+
+.alert {
+	margin-bottom: 20px;
+}
+
+.admin-panel td {
+	height: 70px;
+}
+
+.admin-panel td .button {
+	line-height: 16px;
+}
+
+
+/*分页选中*/
+
+.admin-panel .pagination .active {
+	border: 1px solid #00a3f0;
+	background: #00a3f0;
+}
+.admin-panel .pagination .active a{
+	color: #fff;
+}
+
+.admin-panel .table th {
+	border-bottom: 2px solid #0ae;
+	vertical-align: bottom;
+	padding: 18px 10px 18px 10px;
+	text-align: left;
+}
+
+
+/*表格移入移出背景*/
+
+.admin-panel .table-hover>tbody>tr:hover>td,
+.admin-panel .table-hover>tbody>tr:hover>th {
+	background-color: #efd;
+}
+
+table.tablesorter thead tr .header {
+	background-image: url(../img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../img/asc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../img/desc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown,
+table.tablesorter thead tr .headerSortUp {
+	background-color: #0ae;
+}
+
+table.tablesorter tbody {
+	font-size: 14px;
+}
+
+.table .icon-eye {
+	font-size: 18px;
+}
+
+.panel-foot {
+	background-color: #f5f5f5;
+	padding: 10px 15px;
+	border-radius: 0 0 4px 4px;
+	border-top: none;
+}
+
+.pagination a {
+	color: #333;
+}
+
+.btn-del {
+	cursor: default;
+}
+.btn-ok,.btn-unok{
+	cursor: default;
+}
+
+/*table 表格排序样式*/
+
+.form-group {
+	padding: 15px;
+}
+
+
+/*表单样式*/
+
+
+/*--------自定义链接颜色(可选)--------*/
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+
+/*链接-颜色*/
+
+a:focus,
+a:hover {
+	color: #00a3f0;
+}
+
+
+/*链接-悬浮颜色*/
+
+
+/*--------自定义文本颜色--------*/
+
+.text-main,
+a.text-main:link,
+a.text-main:visited,
+.button.border-main,
+blockquote.border-main strong,
+.pager.border-main a,
+.pager-prev.border-main,
+.pager-next.border-main,
+.nav a:hover,
+.nav-menu.nav-pills .active ul a:hover,
+.bg-inverse .nav-menu ul a:hover,
+.bg-inverse .nav.nav-menu.nav-tabs ul a:hover,
+.bg-inverse .nav.nav-menu.nav-tabs .active ul a:hover,
+.bg-inverse .nav.nav-menu.nav-pills ul a:hover,
+.bg-inverse .nav.nav-menu.nav-pills .active ul a:hover {
+	color: #00a3f0;
+}
+
+
+/*文本-主色*/
+
+.text-sub,
+a.text-sub:link,
+a.text-sub:visited,
+.button.border-sub,
+blockquote.border-sub strong,
+.pager.border-sub a,
+.pager-prev.border-sub,
+.pager-next.border-sub {
+	color: #00a3f0;
+}
+
+
+/*文本-辅色*/
+
+.text-back,
+a.text-back:link,
+a.text-back:visited,
+.button.border-back,
+blockquote.border-back,
+.pager.border-back a,
+.pager-prev.border-back,
+.pager-next.border-back {
+	color: #b5cfd9;
+}
+
+
+/*文本-背景色*/
+
+.text-mix,
+a.text-mix:link,
+a.text-mix:visited,
+.button.border-mix,
+blockquote.border-mix,
+.pager.border-mix a,
+.pager-prev.border-mix,
+.pager-next.border-mix {
+	color: #5cd;
+}
+
+
+/*文本-融合色*/
+
+.text-dot,
+a.text-dot:link,
+a.text-dot:visited,
+.button.border-dot,
+blockquote.border-dot strong,
+.pager.border-dot a,
+.pager-prev.border-dot,
+.pager-next.border-dot {
+	color: #f60;
+}
+
+
+/*文本-点缀色*/
+
+
+/*--------自定义背景色--------*/
+
+.bg-main,
+.border-main .button.active,
+.pointer.border-main .active,
+.nav-pills.border-main .active a,
+.nav-main.border-main .nav-head,
+.pagination.border-main .active {
+	background-color: #00a3f0;
+}
+
+
+/*背景-主色*/
+
+.bg-sub,
+.border-sub .button.active,
+.pointer.border-sub .active,
+.nav-pills.border-sub .active a,
+.nav-main.border-sub .nav-head,
+.pagination.border-sub .active {
+	background-color: #00a3f0;
+}
+
+
+/*背景-辅色*/
+
+.bg-back,
+.border-back .button.active,
+.pointer.border-back .active,
+.nav-pills.border-back .active a,
+.nav-main.border-back .nav-head,
+.pagination.border-back .active {
+	background-color: #f2f9fd;
+}
+
+
+/*背景-背景色*/
+
+.bg-mix,
+.border-mix .button.active,
+.pointer.border-mix .active,
+.nav-pills.border-mix .active a,
+.pagination.border-mix .active {
+	background-color: #00a3f0;
+}
+
+
+/*背景-融合色*/
+
+.bg-dot,
+.border-dot .button.active,
+.pointer.border-dot .active,
+.nav-pills.border-dot .active a,
+.nav-main.border-dot .nav-head,
+.pagination.border-dot .active {
+	background-color: #f60;
+}
+
+
+/*背景-点缀色*/
+
+
+/*--------自定义边框色--------*/
+
+.border-main,
+.border-main .button,
+.border-main .tab-nav li a,
+.border-main .tab-body,
+.button.bg-main,
+.selected.border-main,
+.pointer.border-main li,
+.nav.border-main .active a,
+.nav.nav-tabs.border-main,
+.nav-main.border-main a,
+.nav-main.border-main .nav-head,
+.pagination.border-main li,
+.pager.border-main a {
+	border-color: #00a3f0;
+}
+
+
+/*边框-主色*/
+
+.border-sub,
+.border-sub .button,
+.border-sub .tab-nav li a,
+.border-sub .tab-body,
+.button.bg-sub,
+.selected.border-sub,
+.pointer.border-sub li,
+.nav.border-sub .active a,
+.nav.nav-tabs.border-sub,
+.nav-main.border-sub a,
+.nav-main.border-sub .nav-head,
+.pagination.border-sub li,
+.pager.border-sub a {
+	border-color: #00a3f0;
+}
+
+
+/*边框-辅色*/
+
+.border-back,
+.border-back .button,
+.border-back .tab-nav li a,
+.border-back .tab-body,
+.button.bg-back,
+.selected.border-back,
+.pointer.border-back li,
+.nav.border-back .active a,
+.nav.nav-tabs.border-back,
+.nav-main.border-back a,
+.nav-main.border-back .nav-head,
+.pagination.border-back li,
+.pager.border-back a {
+	border-color: #b5cfd9;
+}
+
+
+/*边框-背景色*/
+
+.border-mix,
+.border-mix .button,
+.border-mix .tab-nav li a,
+.border-mix .tab-body,
+.button.bg-mix,
+.selected.border-mix,
+.pointer.border-mix li,
+.nav.border-mix .active a,
+.nav.nav-tabs.border-mix,
+.nav-main.border-mix a,
+.nav-main.border-mix .nav-head,
+.pagination.border-mix li,
+.pager.border-mix a {
+	border-color: #0a8;
+}
+
+
+/*边框-融合色*/
+
+.border-dot,
+.border-dot .button,
+.border-dot .tab-nav li a,
+.border-dot .tab-body,
+.button.bg-dot,
+.selected.border-dot,
+.pointer.border-dot li,
+.nav.border-dot .active a,
+.nav.nav-tabs.border-dot,
+.nav-main.border-dot a,
+.nav-main.border-dot .nav-head,
+.pagination.border-dot li,
+.pager.border-dot a {
+	border-color: #f60;
+}
+
+
+/*边框-点缀色*/
+
+
+/*--------自定义按钮悬浮文本、边框及背景色--------*/
+
+.button.border-main:hover,
+.button.border-main:focus,
+.button.bg-main:hover,
+.button.bg-main:focus {
+	color: #fff;
+	border-color: #f60;
+	background-color: #f60;
+}
+
+
+/*主色-文本-边框-背景*/
+
+.button.border-sub:hover,
+.button.border-sub:focus,
+.button.bg-sub:hover,
+.button.bg-sub:focus {
+	color: #fff;
+	border-color: #b5cfd9;
+	background-color: #b5cfd9;
+}
+
+
+/*配色-文本-边框-背景*/
+
+.button.border-back:hover,
+.button.border-back:focus,
+.button.bg-back:hover,
+.button.bg-back:focus {
+	color: #333;
+	border-color: #def;
+	background-color: #def;
+}
+
+
+/*背景色-文本-边框-背景*/
+
+.button.border-mix:hover,
+.button.border-mix:focus,
+.button.bg-mix:hover,
+.button.bg-mix:focus {
+	color: #333;
+	border-color: #3bc;
+	background-color: #3bc;
+}
+
+
+/*融合-文本色-边框-背景*/
+
+.button.border-dot:hover,
+.button.border-dot:focus,
+.button.bg-dot:hover,
+.button.bg-dot:focus {
+	color: #fff;
+	border-color: #f00;
+	background-color: #f00;
+}
+
+
+/*点缀色-文本-边框-背景*/
+
+.askans .text-small {
+	font-size: 14px;
+	text-indent: 30px;
+}
+/*旅行小工具*/
+.doc-input {
+    margin-bottom: 15px;
+}
+.doc-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.doc-icons li {
+    display: inline-block;
+    width: 114px;
+    padding: 5px;
+    height: 155px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 5px;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+}
+.doc-icons li span:first-child {
+    font-size: 96px;
+    padding: 10px 0;
+    color: #d5d5d5;
+}
+.doc-icons li span {
+    display: block;
+    font-size: 12px;
+}

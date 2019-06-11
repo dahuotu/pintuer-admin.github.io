@@ -1,0 +1,231 @@
+﻿<!--
+	作者：大火兔 1979788761@qq.com
+	时间：2015-11-24
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="renderer" content="webkit">
+		<title>拼图响应式后台管理-后台管理</title>
+		<!--
+        	作者：大火兔 1979788761@qq.com
+        	时间：2015-11-17
+        	描述：使用官网CSS/JS同步最新版
+        -->
+		<link rel="stylesheet" href="http://www.pintuer.com/css/pintuer.css">
+		<link rel="stylesheet" href="css/admin.css">
+		<link type="image/x-icon" href="http://www.pintuer.com/favicon.ico" rel="shortcut icon" />
+		<link href="http://www.pintuer.com/favicon.ico" rel="bookmark icon" />
+	</head>
+
+	<body style="background-image: url(http://img5q.duitang.com/uploads/item/201312/14/20131214173112_MZPAa.jpeg);">
+		<!--顶部-->
+		<div class="layout bg-main bg-inverse fixed" style="z-index: 9;">
+			<div class="container-layout">
+				<div class="navbar">
+					<!--
+                    	作者：1979788761@qq.com
+                    	时间：2015-11-18
+                    	描述：LOGO及系统名称
+                    -->
+					<div class="navbar-head">
+						<button class="button icon-navicon" data-target="#navbar1">
+						</button>
+						<a href="/">
+							<img src="http://www.pintuer.com/images/30-white.png" />
+							<strong class="text-big hidden-l hidden-s">拼图管理系统</strong></a>
+					</div>
+					<!--
+                    	作者：1979788761@qq.com
+                    	时间：2015-11-18
+                    	描述：导航
+                    -->
+					<div class="navbar-body nav-navicon" id="navbar1">
+						<ul class="nav nav-inline nav-menu">
+							<li><a class="icon-cog" href="#">设置<span class="arrow"></span></a>
+								<ul class="drop-menu">
+									<li><a href="system.html">全局设置</a></li>
+									<li><a href="system.html">系统设置</a></li>
+									<li><a href="system.html">会员设置</a></li>
+									<li><a href="system.html">积分设置</a></li>
+									<li><a href="system.html">权限设置</a></li>
+									<li><a href="system.html">插件设置</a></li>
+									<li><a href="javascript:;">皮肤设置<span class="arrow"></span></a>
+										<ul>
+											<li><a href="#">墨绿</a></li>
+											<li><a href="#">天蓝</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a class="icon-home" href="index.html">导航<span class="arrow"></span></a>
+								<ul class="drop-menu">
+									<li><a class="icon-th-list" href="#">栏目</a></li>
+									<li><a class="icon-file-text" href="content.html">内容<span class="arrow"></span></a>
+										<ul>
+											<li><a href="content.html">新闻</a></li>
+											<li><a href="#">留言</a></li>
+											<li><a href="#">反馈</a></li>
+										</ul>
+									</li>
+									<li><a class="icon-user" href="#">会员</a></li>
+									<li><a class="icon-shopping-cart" href="#">订单</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!--
+                        	作者：1979788761@qq.com
+                        	时间：2015-11-18
+                        	描述：右侧用户资料
+                        -->
+						<ul class="nav nav-inline nav-menu navbar-right">
+							<li>
+								<a class="bg-main" href="javascript:;">
+									<spn><img src="http://www.pintuer.com/demo/pintuer2/images/face.jpg" width="28" class="radius-circle"></spn>
+									管理员
+									<span class="downward"></span>
+								</a>
+								<ul class="drop-menu">
+									<li><a class="icon-user" target="_blank" href="javascript:;">修改资料</a></li>
+									<li><a class="icon-key" target="_blank" href="javascript:;">修改密码</a></li>
+								</ul>
+							</li>
+							<li><a class="bg-green" href="javascript:;"><span class="icon-envelope"></span>&nbsp;<span class="badge bg-blue">5+</span><span class="downward"></span></a>
+								<ul class="drop-menu">
+									<li><a class="text-yellow-light" target="_blank" href="javascript:;"><span class="icon-envelope"></span>您有16封邮件</a></li>
+									<li><a class="bg-gray" target="_blank" href="javascript:;"><span class="icon-envelope"></span>查阅更多...</a></li>
+								</ul>
+							</li>
+							<li><a class="bg-blue" href="javascript:;"><span class="icon-bell-o"></span>&nbsp;<span class="badge bg-green">99+</span><span class="downward"></span></a>
+								<ul class="drop-menu">
+									<li><a class="text-yellow-light active" target="_blank" href="javascript:;"><span class="icon-comment"></span>您有26条未读消息</a></li>
+									<li><a class="text-yellow-light active" target="_blank" href="javascript:;"><span class="icon-comments"></span>您有13条回复消息</a></li>
+									<li><a class="bg-gray" target="_blank" href="javascript:;"><span class="icon-envelope"></span>查看更多...</a></li>
+								</ul>
+							</li>
+							<li><a class="bg-yellow" target="_blank" href="login.html"><span class="icon-sign-out"></span>注销</a></li>
+						</ul>
+						<!--
+                        	作者：1979788761@qq.com
+                        	时间：2015-11-18
+                        	描述：左侧搜索
+                        -->
+						<div class="navbar-form navbar-left hidden-l hidden-s">
+							<form>
+								<input type="text" class="input input-auto" name="keywords" size="15" placeholder="功能名称">
+								<input type="submit" name="search" value="搜索" class="button bg">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="layout padding">
+			<ul class="bread bg">
+				<li><a href="#" class="icon-home">首页</a> </li>
+				<li><a href="#">内容</a></li>
+				<li><a href="#">添加新闻</a></li>
+			</ul>
+			<div class="admin radius">
+				<div class="alert alert-yellow padding">
+					<span class="close rotate-hover"></span><strong>使用说明</strong>
+					<p class="text-small">添加、修改新闻...如果嫌写表单麻烦，可以使用<a class="tag bg-main" target="_blank" href="http://www.pintuer.com/tools/form.html">表单工具</a>快速生成。</p>
+				</div>
+				<form method="post" class="form-x" action="content.html">
+					<div class="form-group" id="f_1448353934900">
+						<div class="label">
+							<label for="f_required_txt">
+								新闻标题
+							</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" id="f_required_txt" name="f_required_txt" maxlength="50" value="" data-validate="required:请填写新闻标题" placeholder="输入新闻标题">
+						</div>
+					</div>
+					<div class="form-group" id="f_1448353950500">
+						<div class="label">
+							<label for="f_address_txt">
+								新闻内容
+							</label>
+						</div>
+						<div class="field">
+							<!--
+                            	作者：大火兔 1979788761@qq.com
+                            	时间：2015-11-24
+                            	描述：这里的textarea可以使用自己的富文本编辑器，这里只做皮肤风格演示，不在列举。
+                            -->
+							<textarea type="text" class="input" id="f_address_txt" name="f_address_txt" maxlength="500" value="" data-validate="required:请填写新闻内容" placeholder="请输入新闻内容" style="height: 350px;"></textarea>
+						</div>
+					</div>
+					<div class="form-group" id="f_1448354031334">
+						<div class="label">
+							<label for="f_class">
+								所属栏目
+							</label>
+						</div>
+						<div class="field">
+							<select class="input" id="f_class" name="f_class" data-validate="required:请选择所属栏目,length#>=1:至少选择1项">
+								<option>军事</option>
+								<option>医学</option>
+								<option>科技</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-button" id="f_1448354059077">
+						<button class="button bg-red button-block">
+							确认
+						</button>
+						<div class="padding-small"></div>
+						<button class="button bg-yellow form-reset button-block" type="reset">
+							重设
+						</button>
+					</div>
+				</form>
+				<br>
+				<br>
+			</div>
+			<br>
+			<br>
+		</div>
+		<!--底部-->
+		<div class="layout fixed-bottom bg-white hidden-l">
+			<div class="border-bottom padding-bottom">
+				<div class="text-center height-big text-small">
+					<strong>版权所有 © <a href="http://www.pintuer.com">Pintuer.com</a> All Rights Reserved，图ICP备：<a href="http://www.pintuer.com">380959609</a></strong>
+				</div>
+			</div>
+		</div>
+		<div class="hidden">
+			<script>
+				var _hmt = _hmt || [];
+				(function() {
+					var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+					document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F637f0fe043ea4b7f59c05d4491e27667' type='text/javascript'%3E%3C/script%3E"));
+				})();
+			</script>
+		</div>
+		<script src="http://www.pintuer.com/js/jquery.js"></script>
+		<script src="http://www.pintuer.com/js/pintuer.js"></script>
+		<script src="http://www.pintuer.com/plugins/respond.js"></script>
+		<script src="http://www.pintuer.com/plugins/layer/layer.js"></script>
+		<script src="js/jquery.tablesorter.js"></script>
+		<script src="js/admin.js"></script>
+		<script>
+			$(function() {
+				//设置第一列不排序
+				$.tablesorter.defaults.headers = {
+					0: {
+						sorter: false
+					}
+				};
+				$('#data-table').tablesorter();
+			});
+		</script>
+	</body>
+
+</html>

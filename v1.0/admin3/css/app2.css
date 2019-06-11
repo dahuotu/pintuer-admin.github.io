@@ -1,0 +1,349 @@
+/*全局*/
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:not(input, textarea) {
+	-webkit-touch-callout: inherit;
+	-webkit-user-select: auto;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	width: 100%;
+	font-family: Hiragino Sans GB, Arial, Helvetica, "黑体", sans-serif;
+	font-size: 14px;
+	color: #878787;
+	-webkit-touch-callout: inherit;
+	-webkit-user-select: auto;
+	background-color: #fff;
+}
+
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+legend,
+caption,
+tbody,
+tfoot,
+thead,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+dt,
+dd {
+	display: inline-block;
+}
+
+textarea,
+input {
+	resize: none;
+	outline: none;
+}
+
+textarea {
+	resize: none;
+	-webkit-appearance: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+em {
+	font-style: normal;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+a {
+	color: #878787;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/*常用*/
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*图标库*/
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('http://libs.baidu.com/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+	src: url('http://libs.baidu.com/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('http://libs.baidu.com/fontawesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('http://libs.baidu.com/fontawesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('http://libs.baidu.com/fontawesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+
+[class*='icon-']::before {
+	display: inline-block;
+	font-family: "FontAwesome";
+	font-weight: normal;
+	font-style: normal;
+	vertical-align: baseline;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus::before {
+	content: "\f067";
+}
+
+.icon-edit:before,
+.icon-pencil-square-o:before {
+	content: "\f044";
+}
+
+.icon-times-circle::before {
+	content: "\f057";
+}
+
+
+/*暂无数据*/
+
+.body {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #26A3FF;
+}
+
+.nodata {
+	padding: 50% 0px;
+	display: none;
+}
+
+.nodata .img {
+	background-image: url(../img/nodata.png);
+	background-size: 100%;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+}
+
+.nodata .msg {
+	margin: 5px auto;
+	text-align: center;
+	color: #f3f3f3;
+}
+
+.more {
+	padding: 0px 10px;
+}
+
+.more .button-more {
+	background-color: #13bef0;
+	border: none;
+	border-radius: 3px;
+	width: 100%;
+	padding: 10px;
+	color: #fff;
+}
+
+
+/*注意事项*/
+
+.lists,
+.tools,
+.form {
+	padding: 5px 10px;
+}
+
+.list {
+	padding: 10px 0px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	box-shadow: -2px 5px 10px -2px #fff;
+}
+
+.list .img {
+	width: 80px;
+	height: 64px;
+	margin: 0 5px 0 5px;
+	float: left;
+	overflow: hidden;
+}
+
+.list .img img {
+	width: 100%;
+}
+
+.list .short-title {
+	height: 28px;
+	color: #00afee;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding-right: 5px;
+}
+
+.list .long-note {
+	height: 32px;
+	color: #677997;
+	font-size: 13px;
+	line-height: 18px;
+	margin-top: 0px;
+	padding-right: 5px;
+}
+
+.tabs {
+	height: 110%;
+}
+
+.tabs .head {
+	height: 46px;
+	line-height: 35px;
+	width: 100%;
+	display: flex;
+}
+
+.tabs .head .trip {
+	width: 48%;
+	text-align: center;
+	background-color: #fff;
+	margin: 5px;
+	color: #d3d3d3;
+}
+
+.tabs .head .base {
+	width: 48%;
+	text-align: center;
+	background-color: #fff;
+	margin: 5px;
+	color: #d3d3d3;
+}
+
+.tabs .head .active {
+	color: #22cafb;
+	font-weight: bold;
+}
+
+.tabs .head .active:active {
+	background-color: #D9D9D9
+}
+
+.tabs .body {
+	height: 720px;
+	background-color: #fff;
+}
+
+.tabs .active {
+	display: block;
+}
+
+.tabs .form {
+	background-color: #fff;
+	margin: -5px 5px;
+	box-shadow: -2px 5px 10px -2px #fff;
+}
+
+.tabs .form textarea {
+	display: block;
+	height: 205px;
+	padding: 10px;
+	margin: 25px auto;
+	border: 1px solid #ededed;
+	width: 100%;
+}
+
+.tabs .form h4 {
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.tabs .form button {
+	border: none;
+	background: #13bef0;
+	width: 100%;
+	margin: auto 0px;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	height: 46px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
